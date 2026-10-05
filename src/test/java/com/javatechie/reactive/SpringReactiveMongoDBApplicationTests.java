@@ -6,9 +6,9 @@ import com.javatechie.reactive.service.ProductService;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.boot.webflux.test.autoconfigure.WebFluxTest;
+
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.reactive.server.WebTestClient;
 import reactor.core.publisher.Flux;
@@ -21,10 +21,10 @@ import  static org.mockito.Mockito.when;
 
 @RunWith(SpringRunner.class)
 @WebFluxTest(ProductController.class)
-class SpringReactiveMongoCrudApplicationTests {
+class SpringReactiveMongoDBApplicationTests {
     @Autowired
     private WebTestClient webTestClient;
-    @MockBean
+    @MockitoBean
     private ProductService service;
 
     @Test
