@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.javatechie</groupId>
-	<artifactId>spring-reactive-mongo-crud</artifactId>
+	<artifactId>spring-reactive-mongodb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-reactive-mongo-crud</name>
+	<name>spring-reactive-mongodb</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>25</java.version>
